@@ -1,0 +1,132 @@
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    height: 84px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    height: 80px;
+    width: 150px;
+}
+
+.left_side {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    width: 403px;
+}
+
+.home_button {
+    width: 60px;
+    height: 80px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.home_icon {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+}
+
+.middle_part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 638px;
+    height: 80px;
+}
+
+.search_bar {
+    width: 595px;
+    height: 60px;
+    background-color: rgb(246, 191, 200);
+    border-radius: 30px;
+}
+
+.right_side {
+    width: 463px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.friends-button {
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.inbox-button {
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.profile-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(246, 191, 200);
+}
+
+/* categories */
+.category_container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.category_content {
+    width: 200px;
+    height: 70px;
+    border-radius: 40px;
+    background-color: rgb(255, 212, 220);
+}
+
+/* category's content */
+.categorial_content {
+    display: flex;
+
+}
+
+.photos_container {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.post {
+ width: 200px;
+ height: 200px;
+ background-color: pink;
+ margin-bottom: 10px;
+}
+
+.post_desc {
+    width: 50%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border: 10px pink solid;
+} 
