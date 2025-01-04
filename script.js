@@ -10,6 +10,8 @@ const correctemail = "user@example.com";
 
 const profile_button = document.getElementById("profile_button");
 const sign_incard = document.getElementById("sign_incard");
+const darken_body = document.getElementById("darken_body");
+const x_button = document.getElementById("x_button");
 
 function profile_please(){
     console.log("aaaaaaaaeeeeeeeeeeeeee")
@@ -59,11 +61,18 @@ function checkCredential() {
 // Profile-Signin
 function show_form(){
     sign_incard.classList.toggle("hidden");
+    darken_body.classList.toggle("hidden");
 }
 
 profile_button.onclick = show_form;
 
-  
+function hide_form(){
+    sign_incard.classList.toggle("hidden");
+    darken_body.classList.toggle("hidden");
+}
+
+x_button.onclick = hide_form;
+
 // profile_button.onclick = profile_please
 // notification_button.onclick = profile_please
 

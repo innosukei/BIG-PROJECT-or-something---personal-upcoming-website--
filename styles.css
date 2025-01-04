@@ -16,6 +16,7 @@ body {
     background-color: white;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo {
@@ -317,8 +318,10 @@ body {
     flex-direction: column;
     margin-right: 100px;
     margin-top: 30px;
-    position: absolute;
-    left:-0px;
+    position: fixed;
+    left:649px;
+    top:200px;
+    z-index: 5;
 }
 
 .top_si_card {
@@ -430,6 +433,22 @@ body {
 
 .hidden {
     display: none;
+}
+
+/* Darken Background */
+.darken_bg {
+    position:fixed ;
+    width: 100% ;
+    height:1000% ;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+/* Cancel */
+.cancel_button {
+    position: absolute;
+    right: 10px;
+    top: 5px;
 }
 
 /* Friends Pop-Up */
