@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="styles.color.css">
+</head>
+
+<body>
+    <div class="darken_bg hidden" id="darken_body"></div>
+    <div class="navbar">
+        <div class="left_side">
+            <div class="logo">
+                <img src="./Assets/MemoLog Logo john cena.png" alt="" width="150px" height="70px">
+            </div>
+            <button class="home_button">
+                <a href="home.html">
+                    <img src="./Assets/home_button.png" alt="" width="70px" height="70px">
+                </a>
+            </button>
+        </div>
+        <div class="middle_part">
+            <div class="search_bar"></div>
+        </div>
+        <div class="right_side">
+            <div class="profile" id="profile_button">
+                <div class="profile" id="Profile_button">
+                </div>
+            </div>
+            <div class="signin_card hidden" id="sign_incard">
+                <div class="top_si_card">
+                    <img src="./Assets/MemoLog_Logo SVG.svg" alt="" width="60px">
+                    <div class="cancel_button" id="x_button">
+                        <img src="./Assets/cancel_button.png" alt="">
+                    </div>
+                    <div class="si_card_header">
+                        <div class="top_part_header">Hello!</div>
+                        <div class="bottom_part_header">Dont have an Account?</div>
+                    </div>
+                </div>
+                <div class="forms">
+                    <form action="">
+                        <label for="">Email</label><br>
+                        <input class="input_text input_failed" id="email-field" type="email" placeholder="Email"><br>
+                        <br>
+                        <label for="">Password</label><br>
+                        <input id="password-field" type="password" class="form-control input_text" name="password"
+                            placeholder="Create a password" id="password-field">
+                        <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                        <br>
+                        <label for="birthdate">Birthdate:</label><br>
+                        <input class="input_text" type="date" id="birthdate" name="birthdate">
+                    </form>
+                </div>
+                <div class="buttons">
+                    <div class="continue">
+                        <button onclick="checkCredential()">Continue</button>
+                    </div>
+                    OR
+                    <div class="continue_w_google">
+                        <button><img src="./img/devicon_google.svg" alt="">Continue with Google</button>
+                    </div>
+                </div>
+                <div class="policy">
+                    <div class="agreement">
+                        By continuing, you agree to Pinterest's 
+                        Terms of Service and acknowledge you've read our Privacy Policy
+                        Notice at collection
+                    </div>
+                    <div class="login">
+                        Already a member? Log in
+                    </div>
+                </div>
+                <div class="bottom_si_card">
+                    Create a free business account
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="foryoupage">
+        <!-- row 1 -->
+        <div class="row">
+            <div class="fyp_container">
+                <div class="profile_picture">
+                    <img src="./Feeds/Profile 1/pfp.jpeg" alt="" width="200px" height="200px">
+                </div>
+                username
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 1/sakura.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 1/hanako.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 1/ha.jpeg" alt="" width=width="200px" height="200px">
+                </div>
+            </div>
+
+            <div class="fyp_container bg_blue">
+                <div class="profile_picture">
+                    <img src="./Feeds/Profile 2/profile.jpeg" alt="" width="200px" height="200px">
+                </div>
+                username
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 2/cloud2.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 2/Cloud.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 2/coquette cloud strife ౨ৎ.jpeg" alt="" width="200px" height="200px">
+                </div>
+            </div>
+
+            <div class="fyp_container bg_green">
+                <div class="profile_picture">
+                    <img src="./Feeds/Profile 3/pfp.jpeg" alt="" width="200px" height="200px">
+                </div>
+                username
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 3/Dan Heng IL.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 3/DANHENG.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 3/Dan Heng IL 2.jpeg" alt="" width="200px" height="200px">
+                </div>
+            </div>
+        </div>
+
+        <!-- row 2 -->
+        <div class="row">
+            <div class="fyp_container bg_yellow">
+                <div class="profile_picture">
+                    <img src="./Feeds/Profile 4/pfp.jpeg" alt="" width="200px" height="200px">
+                </div>
+                username
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 4/navia1.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 4/navia2.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 4/navia3.jpeg" alt="" width=width="200px" height="200px">
+                </div>
+            </div>
+
+            <div class="fyp_container pink">
+                <div class="profile_picture">
+                    <img src="./Feeds/Profile 2/profile.jpeg" alt="" width="200px" height="200px">
+                </div>
+                username
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 2/cloud2.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 2/Cloud.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 2/coquette cloud strife ౨ৎ.jpeg" alt="" width="200px" height="200px">
+                </div>
+            </div>
+
+            <div class="fyp_container bg_blue">
+                <div class="profile_picture">
+                    <img src="./Feeds/Profile 6/pfp.jpeg" alt="" width="200px" height="200px">
+                </div>
+                username
+                <div class="fyp_post">
+                    <img src="./Feeds/Profile 6/tomoya.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/profile 6/mitsuru.jpeg" alt="" width="200px" height="200px">
+                </div>
+                <div class="fyp_post">
+                    <img src="./Feeds/profile 6/hajime.jpeg" alt="" width="200px" height="200px">
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>

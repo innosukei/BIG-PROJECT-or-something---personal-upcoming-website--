@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="styles.color.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left_side">
+            <div class="logo">
+                <img src="./Assets/MemoLog Logo john cena.png" alt="" width="150px" height="70px">
+            </div>
+            <button class="home_button">
+                <a href="home.html">
+                    <img src="./Assets/home_button.png" alt="" width="70px" height="70px">
+                </a>
+            </button>
+        </div>
+        <div class="middle_part">
+            <div class="search_bar"></div>
+        </div>
+        <div class="right_side">
+            <div class="notifications">
+                <img src="./Assets/inbox.png" alt="" id="notification_button">
+                <div class="notification_dropdown" id="drop_down_content">
+                    <div class="notification_template">
+                        <div class="notification_card">
+                            <img src="./Posts/haruka/wind_chimes.jpeg" alt="">
+                        </div>
+                        <div class="notification_text">You have good taste!</div>
+                        <div class="notification_date">1d</div>
+                    </div>
+                    <div class="notification_template">
+                        <div class="notification_card">
+                            <img src="./Posts/nene/i_ranoutofideas.jpeg" alt="">
+                        </div>
+                        <div class="notification_text">You have good taste!</div>
+                        <div class="notification_date">2d</div>
+                    </div>
+                    <div class="notification_template">
+                        <div class="notification_card">
+                            <img src="./Posts/shiho/ramen.jpg" alt="">
+                        </div>
+                        <div class="notification_text">You have good taste!</div>
+                        <div class="notification_date">3d</div>
+                    </div>
+                    <div class="notification_template">
+                        <div class="notification_card">
+                            <img src="./Posts/ena/hirono.jpeg" alt="">
+                        </div>
+                        <div class="notification_text">You have good taste!</div>
+                        <div class="notification_date">7d</div>
+                    </div>
+                    <div class="notification_template">
+                        <div class="notification_card">
+                            <img src="./Feeds/profile 4/pfp.jpeg" alt="">
+                        </div>
+                        <div class="notification_text">You have good taste!</div>
+                        <div class="notification_date">2w</div>
+                    </div>
+                </div>
+            </div>
+            <div class="profile" id="profile_button">
+                <div class="profile" id="Profile_button">
+                    <div class="signin_card hidden" id="sign_incard">
+                        <div class="top_si_card">
+                            <img src="./Assets/MemoLog_Logo SVG.svg" alt="" width="60px">
+                            <div class="si_card_header">
+                                <div class="top_part_header">Hello!</div>
+                                <div class="bottom_part_header">Dont have an Account?</div>
+                            </div>
+                        </div>
+                        <div class="forms">
+                            <form action="">
+                                <label for="">Email</label><br>
+                                <input class="input_text input_failed" id="email-field" type="email" placeholder="Email"><br>
+                                <br>
+                                <label for="">Password</label><br>
+                                <input id="password-field" type="password" class="form-control input_text" name="password"
+                                    placeholder="Create a password" id="password-field">
+                                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                <br>
+                                <label for="birthdate">Birthdate:</label><br>
+                                <input class="input_text" type="date" id="birthdate" name="birthdate">
+                            </form>
+                        </div>
+                        <div class="buttons">
+                            <div class="continue">
+                                <button onclick="checkCredential()">Continue</button>
+                            </div>
+                            OR
+                            <div class="continue_w_google">
+                                <button><img src="./img/devicon_google.svg" alt="">Continue with Google</button>
+                            </div>
+                        </div>
+                        <div class="policy">
+                            <div class="agreement">
+                                By continuing, you agree to Pinterest's 
+                                Terms of Service and acknowledge you've read our Privacy Policy
+                                Notice at collection
+                            </div>
+                            <div class="login">
+                                Already a member? Log in
+                            </div>
+                        </div>
+                        <div class="bottom_si_card">
+                            Create a free business account
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.bg_blue {
+    background-color: rgb(217, 217, 255);
+}
+
+.bg_green {
+background-color: rgb(149, 177, 149);
+}
+
+.fyp_container:nth-child(2) {
+ border-radius: 30px;
+}
+
+.bg_yellow {
+background-color: rgb(229, 230, 205);
+}

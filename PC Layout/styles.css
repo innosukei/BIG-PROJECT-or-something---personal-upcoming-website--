@@ -1,0 +1,485 @@
+* {
+    /* outline: 1px red solid; */
+}
+
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+.navbar {
+    width: 99%;
+    height: 84px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    height: 80px;
+    width: 150px;
+}
+
+.left_side {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    height: 80px;
+    width: 403px;
+}
+
+.home_button {
+    width: 60px;
+    height: 80px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.home_icon {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+}
+
+.middle_part {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.search_bar {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(246, 191, 200);
+    border-radius: 30px;
+}
+
+.right_side {
+    width: fit-content;
+    height: 80px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.friends-button {
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.inbox-button {
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.profile-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: grey;
+}
+
+.profile-button img {
+    border-radius: 50px;
+}
+
+.profile {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        border: none;
+        background-color: grey;
+}
+
+/* PROFILE PAGE */
+
+/* categories */
+.scroll-container {
+	display: flex;
+	overflow-x: auto;
+	white-space: nowrap;
+	padding: 10px;
+	gap: 10px;
+	scroll-behavior: smooth;
+}
+
+.scroll-item {
+	flex: 0 0 auto; /* Prevent items from shrinking */
+	width: 200px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* === Styling === */
+	border-radius: 5px;
+	margin: 5px;
+	color: white;
+	background: #ffffff;
+}
+
+.category_container {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.category_content {
+    margin: 20px;
+    width: 200px;
+    height: 70px;
+    border-radius: 40px;
+    background-color: rgb(255, 212, 220);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(120, 118, 118);
+    flex: 0 0 auto; /* Prevent items from shrinking */
+}
+
+.category-scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+/* category's content */
+.categorial_content {
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+.photos_container {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.post {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    margin-bottom: 10px;
+}
+
+.post_desc {
+    width: 100%;
+    height: 490px;
+    background-color: rgb(255, 255, 255);
+    border: 10px pink solid;
+}
+
+.scroll-window {
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOME PAGE */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fyp_container {
+    margin: 40px;
+    width: 400px;
+    height: 960px;
+    background-color: rgb(252, 206, 214);
+    
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile_picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.profile_picture img {
+    border-radius: 200px;
+}
+
+.fyp_post {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+}
+
+
+
+/* Notification Pop-Up */
+.notification_dropdown {
+    width: 250px;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    Top: 44px;
+    right: 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    /* shadow + blur effect | format : x , y , blur , color */
+    box-shadow: 0px 5px 10px #000000;
+}
+
+.notification_template {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+}
+
+.notification_template:hover {
+    animation: notif_bgc 1.5s;
+    animation: forwards;
+}
+
+@keyframes notif_bgc {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: gray;
+    }
+}
+
+.notification_card {
+    background-color: rgb(43, 43, 43);
+    width: 50px;
+    height: 55px;
+    margin: 20px;
+}
+
+.notification_card img {
+    height: 100%;
+    width: 100%;
+}
+
+.notification_date {
+    display: flex;
+    align-items: top;
+    height: 60%;
+    padding-left: 15px;
+}
+
+.notification_dropdown_expanded {
+    animation: drop_down_reveal 0.75s ease-in-out;
+    animation-fill-mode: forwards;
+    width: 250px;
+    height: 0px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: absolute;
+    Top: 44px;
+    right: 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    /* shadow + blur effect | format : x , y , blur , color */
+    box-shadow: 0px 5px 10px #000000;
+}
+
+@keyframes drop_down_reveal {
+    0% {
+        width: 250px;
+        height: 0px
+    }
+
+    100% {
+        width: 250px;
+        height: 470px
+    }
+}
+
+/* sign-in card */
+.signin_card {
+    width: 392px;
+    height: fit-content;
+    background-color: white;
+    border: 1px rgb(209, 209, 209) solid;
+    border-radius: 10px;
+    box-shadow: 0px 2px 3px rgb(184, 184, 184);
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-top: 30px;
+    position: fixed;
+    left:649px;
+    top:200px;
+    z-index: 5;
+}
+
+.top_si_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.si_card_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top_part_header {
+    font-weight: 600;
+    font-size: larger;
+}
+
+.bottom_part_header {
+    font-weight: 100;
+    color: grey;
+    font-size: smaller;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    color: gray;
+}
+
+.forms input {
+    border: 1px rgb(211, 211, 211) solid;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    color: rgb(167, 167, 167);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.input_failed {
+    border-color: red !important;
+    color: red !important;
+}
+
+.field-icon {
+    float: right;
+    margin-right: 10px;
+    margin-top: -21px;
+    position: relative;
+    z-index: 2;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.continue button {
+    background-color: rgb(238, 166, 188);
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    border: 0px;
+}
+
+.continue_w_google button {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.policy {
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.agreement {
+    width: 200px;
+}
+
+.bottom_si_card {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: 600;
+    background-color: rgb(214, 214, 214);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Darken Background */
+.darken_bg {
+    position:fixed ;
+    width: 100% ;
+    height:1000% ;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+}
+
+/* Cancel */
+.cancel_button {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+/* Friends Pop-Up */

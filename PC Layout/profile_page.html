@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="left_side">
+            <div class="logo">
+                <img src="./Assets/MemoLog Logo john cena.png" alt="" width="150px" height="70px">
+            </div>
+            <button class="home_button">
+                <a href="home_logged_in.html">
+                    <img src="./Assets/home_button.png" alt="" width="70px" height="70px">
+                </a>
+            </button>
+        </div>
+        <div class="middle_part">
+            <div class="search_bar"></div>
+        </div>
+        <div class="right_side">
+            <button class="friends-button">
+                <img src="./Assets/friends_button.png" alt="" width="70px" height="70px">
+            </button>
+            <div class="notifications">
+                <img src="./Assets/inbox.png" alt="" id="notification_button">
+                <div class="notification_dropdown" id="drop_down_content">
+                    <div class="notification_template">
+                        <div class="notification_card">
+                            <img src="./Posts/haruka/wind_chimes.jpeg" alt="">
+                        </div>
+                        <div class="notification_text">You have good taste!</div>
+                        <div class="notification_date">1d</div>
+                    </div>
+                    <div class="notification_template">
+                        <div class="notification_card">
+                            <img src="./Posts/nene/i_ranoutofideas.jpeg" alt="">
+                        </div>
+                        <div class="notification_text">You have good taste!</div>
+                        <div class="notification_date">2d</div>
+                    </div>
+                    <div class="notification_template">
+                        <div class="notification_card">
+                            <img src="./Posts/shiho/ramen.jpg" alt="">
+                        </div>
+                        <div class="notification_text">You have good taste!</div>
+                        <div class="notification_date">3d</div>
+                    </div>
+                    <div class="notification_template">
+                        <div class="notification_card">
+                            <img src="./Posts/ena/hirono.jpeg" alt="">
+                        </div>
+                        <div class="notification_text">You have good taste!</div>
+                        <div class="notification_date">7d</div>
+                    </div>
+                    <div class="notification_template">
+                        <div class="notification_card">
+                            <img src="./Feeds/profile 4/pfp.jpeg" alt="">
+                        </div>
+                        <div class="notification_text">You have good taste!</div>
+                        <div class="notification_date">2w</div>
+                    </div>
+                </div>
+            </div>
+            <button class="profile-button">
+                <img src="./Posts/mafuyu/mafuyu_1.jpeg" alt="" width="60px" height="60px">
+            </button>
+        </div>
+    </div>
+
+    <div class="category_container category-scroll">
+        <div onclick="showCategory('category_1')" class="category_content">
+            mizuki
+        </div>
+        <div onclick="showCategory('category_2')" class="category_content">
+            shiho
+        </div>
+        <div onclick="showCategory('category_3')" class="category_content">
+            akito
+        </div>
+        <div onclick="showCategory('category_4')" class="category_content">
+            nene
+        </div>
+        <div onclick="showCategory('category_5')" class="category_content">
+            haruka
+        </div>
+        <div onclick="showCategory('category_6')" class="category_content">
+            mafuyu
+        </div>
+        <div onclick="showCategory('category_7')" class="category_content">
+            ena
+        </div>
+        <div onclick="showCategory('category_8')" class="category_content">
+            mix
+        </div>
+    </div>
+
+    <div id="category_1" class="categorial_content">
+        <div class="photos_container scroll-window">
+            <div class="post">
+                <img src="./Posts/mizuki/mizuki.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/idsmile_room.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/cute_plushies.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/mizuki would stan new jeans idk.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/mizuki_ena5_bloomed.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/store.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/makeup_neccesities.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/mizuki_nui.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/books.jpg" alt="" idth="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/color pallete or sum.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/mizu_ena5.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+            </div>
+        </div>
+
+        
+        <div class="post_desc">
+            <h1> Mizuki Akiyama</h1>
+            <p >Silly silly silly silly silly silly silly</p>
+            <p> :333333</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="category_2" class="categorial_content">
+        <div class="photos_container scroll-window">
+            <div class="post">
+                <img src="./Posts/shiho/bass.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/shiho_1.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/smiski.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/shiho_nui.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/matcha.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/shiho_3.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/downtown.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/shiho_2.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/ramen.jpg" alt="" idth="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/green_manga_panel.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/green_stars.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/artic_monkeys.jpg" alt="" width="200px" height="200px">
+            </div>
+        </div>
+
+        
+        <div class="post_desc">
+            <h1> Shiho Hinomori</h1>
+            <p>hi</p>
+            <p>potentially canadian</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="category_3" class="categorial_content">
+        <div class="photos_container scroll-window">
+            <div class="post">
+                <img src="./Posts/akito/street_wear.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/akito_2.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/akito_nui.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/grafitti.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/pancakes.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/akito_3.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/vip_lightsticks.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/akito_1.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/cafe.jpg" alt="" idth="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/ugh_street.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/pantone_orange.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/cafe_window.jpg" alt="" width="200px" height="200px">
+            </div>
+        </div>
+
+        
+        <div class="post_desc">
+            <h1> Akito Shinonome</h1>
+            <p>Rizzler on Ohio</p>
+            <p>+1000000 aura</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="category_4" class="categorial_content">
+        <div class="photos_container scroll-window">
+            <div class="post">
+                <img src="./Posts/nene/nene_2.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/beach.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/beabadoobee.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/nene_3.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/plushies.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/animal_crossing.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/i_ranoutofideas.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/daikon.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/nene_1.jpg" alt="" idth="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/nene_nui.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/nene_4.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/green_sweater" alt="" width="200px" height="200px">
+            </div>
+        </div>
+
+        
+        <div class="post_desc">
+            <h1> Nene Kusanagi</h1>
+            <p>local gamer</p>
+            <p>:D come to WxS's shows!</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="category_5" class="categorial_content">
+        <div class="photos_container scroll-window">
+            <div class="post">
+                <img src="./Posts/haruka/haruka_1.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/penguin.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/shoujo_rei.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/basketball.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/haruka_2.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/twice.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/firework.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/haruka_3.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/tuxedo_same_cupcakes.jpeg" alt="" idth="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/blue_shades.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/cafe_drink.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/sonny_angel.jpeg" alt="" width="200px" height="200px">
+            </div>
+        </div>
+
+        
+        <div class="post_desc">
+            <h1> Haruka Kiritani</h1>
+            <p >^^</p>
+            <p>penguins</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="category_6" class="categorial_content">
+        <div class="photos_container scroll-window">
+            <div class="post">
+                <img src="./Posts/mafuyu/mafuyu_1.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/archery.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/mafuyu_nui.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/studies.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/mafuyu_3.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/apple.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/mafuyu_2.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/aquarium.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/music_sheet.jpeg" alt="" idth="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/smol mafuyu.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/runaway.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/mitski.jpeg" alt="" width="200px" height="200px">
+            </div>
+        </div>
+
+        
+        <div class="post_desc">
+            <h1>Mafuyu Asahina</h1>
+            <p>.</p>
+            <p>Mother complex honestly</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="category_7" class="categorial_content">
+        <div class="photos_container scroll-window">
+            <div class="post">
+                <img src="./Posts/ena/ariana_grande.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/ena_3.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/hirono.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/mori_kei.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/cheesecake.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/ena_2.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/paint.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/ena_1.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/shopping.jpeg" alt="" idth="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/ena_nui.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/sculpture.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/tea.jpeg" alt="" width="200px" height="200px">
+            </div>
+        </div>
+
+        
+        <div class="post_desc">
+            <h1>Ena Shinonome</h1>
+            <p>Enanan aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <p>Mm cheesecake</p>
+            <p></p>
+        </div>
+    </div>
+
+    <div id="category_8" class="categorial_content">
+        <div class="photos_container scroll-window">
+            <div class="post">
+                <img src="./Posts/shiho/downtown.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/mori_kei.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/akito_3.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/penguin.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/color pallete or sum.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mizuki/mizu_ena5.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/mafuyu/smol mafuyu.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/shiho/artic_monkeys.jpg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/nene/daikon.jpeg" alt="" idth="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/ena/paint.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/haruka/basketball.jpeg" alt="" width="200px" height="200px">
+            </div>
+            <div class="post">
+                <img src="./Posts/akito/vip_lightsticks.jpg" alt="" width="200px" height="200px">
+            </div>
+        </div>
+
+        
+        <div class="post_desc">
+            <h1>Ena Shinonome</h1>
+            <p>Enanan aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+            <p>Mm cheesecake</p>
+            <p></p>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
