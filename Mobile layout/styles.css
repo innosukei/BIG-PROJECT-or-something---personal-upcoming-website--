@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    /* outline: 1px red solid; */
 }
 
 body {
@@ -20,10 +21,11 @@ a {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    overflow-y: auto;
 }
 
 .phone_nav_bar {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100px;
     background-color: white;
@@ -52,7 +54,8 @@ a {
 /* PROFILE_PAGE */
 .profile_screen {
     width: 100%;
-    height: fit-content;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .top_section {
@@ -82,6 +85,7 @@ a {
     display: flex;
     flex-direction: row;
     width: 100%;
+    overflow-x: auto;
 }
 
 .category {
@@ -101,24 +105,93 @@ a {
     display: flex;
     width: 100%;
     margin-top: 10px;
-    height: fit-content;
+    height: calc(100vh - 300px);
+    justify-content: space-between;
 }
 
 .feeds {
  display: flex;
  flex-direction: column;
  gap: 10px;
- width: 100%;
+ width: fit-content;
+height: 100%;
+overflow-y: auto;
 }
 
 .pictures {
     width: 180px;
     height: 180px;
     background-color: #E4C9C9;
+    flex: 0 0 auto; /* Prevent items from shrinking */
 }
 
 .description {
-    width: 100%;
+    width: 50%;
     background-color: #E4C9C9;
-    left:0
+    left:0;
+    height: 80%;
+    align-self: center;
 }
+
+
+
+/* HOME PAGE */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.fyp_container {
+    margin: 25px;
+    width: 150px;
+    height: 600px;
+    background-color: rgb(252, 206, 214);
+    
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile_picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.profile_picture img {
+    border-radius: 200px;
+}
+
+.fyp_post {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    flex: 0 0 auto; /* Prevent items from shrinking */
+}
+
+
+/* FRIENDS PAGE */
+.friends_template {
+    display: flex;
+}
+
+.identity {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.friends_pfp {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
