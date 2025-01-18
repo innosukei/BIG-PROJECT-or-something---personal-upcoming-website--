@@ -32,8 +32,8 @@ a {
     display: flex;
     justify-content: center;
     gap: 25px;
-    bottom: 0;
     left: 0;
+    bottom: 0;
 }
 
 .profile_button {
@@ -51,7 +51,6 @@ a {
     margin-top: 20px;
 }
 
-.profile
 
 /* PROFILE_PAGE */
 .profile_screen {
@@ -180,14 +179,21 @@ overflow-y: auto;
 
 
 /* FRIENDS PAGE */
+.friends_screen {
+    overflow-y: auto;
+}
+
 .friends_template {
     display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
 }
 
 .identity {
     display: flex;
     align-items: center;
     gap: 8px;
+    margin-bottom: 5px
 }
 
 .friends_pfp {
@@ -198,6 +204,114 @@ overflow-y: auto;
 }
 
 .template_bg {
- width: 400px;
- height: 350px;
+ width: 300px;
+ height: 250px;
+ background-color: #E4C9C9;
+
+}
+
+.top_friends_template {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.friends_pics {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+}
+
+.bottom_friends_template {
+    display: flex;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.description_2 {
+    width: 170px;
+    height: 100px;
+    background-color: #665C5C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+/* SEARCH SCREEN */
+
+.search_screen {
+    overflow-y: auto;
+}
+
+.top_search_screen {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.search_bar {
+    width: 350px;
+    height: 65px;
+    border-radius: 15px;
+    border: 2px solid #ac9b9b;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    margin-top: 25px;
+}
+
+.advertisement {
+ margin-top: 30px;
+ display: flex;
+ justify-content: center;
+}
+
+.ads {
+    display: flex;
+    
+}
+
+.reccommendations_highlight {
+    background-color: #d4b1b1;
+    width: 160px;
+    height: 160px;
+}
+
+.recco {
+    display: flex;
+    flex-direction: column;
+}
+
+.reccommendations_1 {
+    background-color: #8a7474;
+    width: 80px;
+    height: 80px;
+}
+
+.reccommendations_2 {
+    background-color: #a09797;
+    width: 80px;
+    height: 80px;
+}
+
+.bottom_search_screen {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.profile_template {
+    width: 170px;
+    height: 200px;
+    background-color:#e8bbbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
