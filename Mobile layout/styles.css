@@ -36,7 +36,7 @@ a {
     left: 0;
 }
 
-.profile_page {
+.profile_button {
     margin: 0;
     padding: 0;
     border: none;
@@ -50,6 +50,8 @@ a {
 .nav_button {
     margin-top: 20px;
 }
+
+.profile
 
 /* PROFILE_PAGE */
 .profile_screen {
@@ -195,3 +197,7 @@ overflow-y: auto;
     border-radius: 50px;
 }
 
+.template_bg {
+ width: 400px;
+ height: 350px;
+}
