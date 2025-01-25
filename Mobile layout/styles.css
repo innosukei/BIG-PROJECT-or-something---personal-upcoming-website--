@@ -250,7 +250,7 @@ overflow-y: auto;
 
 .top_search_screen {
 display: flex;
-justify-content: center;
+align-items: center;
 flex-direction: column;
 }
 
@@ -269,6 +269,51 @@ flex-direction: column;
  margin-top: 30px;
  display: flex;
  justify-content: center;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 290px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
 }
 
 .ads {
@@ -307,11 +352,25 @@ flex-direction: column;
     flex-direction: column;
 }
 
+.prof_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
 .profile_template {
     width: 170px;
     height: 200px;
     background-color:#e8bbbb;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    gap: 10px;
+}
+
+.bottom_search_screen p {
+    margin-left: 10px;
 }
