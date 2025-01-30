@@ -374,3 +374,79 @@ flex-direction: column;
 .bottom_search_screen p {
     margin-left: 10px;
 }
+
+/* inbox screen */
+.screen {
+    display: flex;
+    justify-content: center;
+}
+
+.inbox_screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option_bar_template {
+    width: 320px;
+    height: 130px;
+    background-color: #937e7e;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.notification_info {
+    width: 180px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.notification_info p {
+    color: white;
+}
+
+.notification_desc {
+    color: white;
+    opacity: 50%;
+}
+
+
+.chat_container {
+    margin-top: 20px;
+    background-color: #937e7e;
+}
+
+.messages {
+    color: white;
+    font-size: larger;
+    margin:10px
+}
+
+
+/* SIGN IN */
+.sign_in_bg {
+width: 100vw;
+height: 100vh;
+position: absolute;
+top: 0;
+left: 0;
+background-image: url("Assets (Mobile)\Log in Screen_background.png");
+}
+
+.forms {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 0;
+}
+
+.alt_ways {
+    display: flex;
+    gap: 100px;
+}
