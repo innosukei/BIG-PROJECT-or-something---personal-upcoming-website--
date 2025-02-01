@@ -429,24 +429,45 @@ flex-direction: column;
 
 
 /* SIGN IN */
-.sign_in_bg {
-width: 100vw;
-height: 100vh;
-position: absolute;
-top: 0;
-left: 0;
-background-image: url("Assets (Mobile)\Log in Screen_background.png");
-}
+
 
 .forms {
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     bottom: 0;
+    width: 100vw;
+    height: 40vh;
+    bottom: 0;
+    left: 0;
+    gap: 10px;
 }
 
 .alt_ways {
     display: flex;
+    justify-content: center;
     gap: 100px;
+}
+
+.sign_in_bg img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    top: 0;
+    left: 0;
+}
+
+.continue {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.sign_in_options {
+    display: flex;
+    justify-content: center ;
+    margin: 10px;
 }

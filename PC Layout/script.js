@@ -28,7 +28,9 @@ function showCategory(categoryId) {
 }
 
 // Notification
-notification_button.onclick = show_dropdown;
+if(notification_button!=null){
+    notification_button.onclick = show_dropdown;
+}
 var status1 = "hidden"
 
 function show_dropdown() {
@@ -60,6 +62,7 @@ function checkCredential() {
 
 // Profile-Signin
 function show_form(){
+    console.log('show form')
     sign_incard.classList.toggle("hidden");
     darken_body.classList.toggle("hidden");
 }
@@ -72,9 +75,6 @@ function hide_form(){
 }
 
 x_button.onclick = hide_form;
-
-// profile_button.onclick = profile_please
-// notification_button.onclick = profile_please
 
 
 

@@ -10,32 +10,41 @@
 
 <body>
     <div class="log_in_page">
-        <div class="sign_in_bg"></div>
+        <div class="sign_in_bg">
+            <img src="./Assets (Mobile)/Log in Screen_background.png" alt="">
+        </div>
 
-        <!-- <div class="forms">
-        <form action="">
-            <label for="">Email</label><br>
-            <input class="input_text input_failed" id="email-field" type="email" placeholder="Email"><br>
-            <br>
-            <label for="">Password</label><br>
-            <input id="password-field" type="password" class="form-control input_text" name="password"
-                placeholder="Create a password" id="password-field">
-            <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
-            <br>
-        </form>
-        forgot your password? click here
-        OR
-        log in with
-        <div class="alt_ways">
-            <div class="continue_w_google">
-                <button><img src="./Assets (Mobile)/devicon_google.png" width="50px"></button>
-            </div>
-            <div class="continue_w_facebook">
-                <button><img src="./Assets (Mobile)/qlementine-icons_facebook-fill-16.png" width="50px"></button>
+
+        <div class="forms">
+            <form action="">
+                <label for="">Email</label><br>
+                <input class="input_text input_failed" id="email-field" type="email" placeholder="Email"><br>
+                <br>
+                <label for="">Password</label><br>
+                <input id="password-field" type="password" class="form-control input_text" name="password"
+                    placeholder="Create a password" id="password-field">
+                <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                <br>
+            </form>
+            <div class="buttons">
+                <div class="continue">
+                    <button onclick="checkCredential()">Continue</button>
+                </div>
+                <p class="sign_in_options">forgot your password? click here</p>
+                <p class="sign_in_options">OR</p>
+                <p class="sign_in_options">log in with</p>
+                <div class="alt_ways">
+                    <div class="continue_w_google">
+                        <a><img src="./Assets (Mobile)/devicon_google.png" width="40px"></a>
+                    </div>
+                    <div class="continue_w_facebook">
+                        <a><img src="./Assets (Mobile)/qlementine-icons_facebook-fill-16.png" width="40px"></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div> -->
 
+        <script src="script.js"></script>
 </body>
 
 </html>

@@ -1,30 +1,17 @@
-let currentIndex = 0;
+const email = document.getElementById("email-field");
+const password = document.getElementById("password-field");
 
-function showSlide(index) {
-    const slides = document.querySelectorAll('.carousel-item');
-    const totalSlides = slides.length;
+const correctpassword = "password123";
+const correctemail = "user@example.com";
 
-    // Wrap around the index
-    if (index >= totalSlides) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = totalSlides - 1;
-    } else {
-        currentIndex = index;
+function checkCredential() {
+    if ((email.value === correctemail) && (password.value === correctpassword)) {
+        alert("Login successful")
+        window.location.href = "./home_screen.html";
     }
-
-    // Calculate the offset for the transform
-    const offset = -currentIndex * 100;
-    document.querySelector('.carousel-inner').style.transform = `translateX(${offset}%)`;
+    else {
+        alert("Login failed")
+        email.classList.add("input_failed")
+        password.classList.add("input_failed")
+    }
 }
-
-function nextSlide() {
-    showSlide(currentIndex + 1);
-}
-
-function prevSlide() {
-    showSlide(currentIndex - 1);
-}
-
-// Optional: Auto slide every 3 seconds
-setInterval(nextSlide, 3000);
